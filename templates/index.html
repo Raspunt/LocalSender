@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>LocalSender</title>
+</head>
+<body>
+
+
+    <div class="header">
+
+        <h3>Этот сайт сделан для отправки по локальной сети</h3>
+        
+        <h3>а это просто для красоты</h3>
+
+
+
+    </div>
+
+
+    <div class="container padding_css">
+        
+        <div class="flex__center">
+
+            <div class="content">
+
+                
+                <h1>Отправить файл</h1>
+                <form method="post" action="/upload_image" enctype="multipart/form-data" >
+
+                    <div class="form-group form_flex">
+                        <label for="exampleFormControlFile1">сюда загружать файл</label>
+                        <input name="file_jas"  type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn_form">Отправить</button>
+
+                </form>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    <p>{{ message }}</p>
+
+
+
+
+
+    
+</body>
+</html>
